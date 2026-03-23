@@ -1,0 +1,72 @@
+{
+  "name": "samectx-skill",
+  "version": "1.0.0",
+  "description": "TRAE CN 上下文同步技能 - 智能提示用户使用 samectx npm 工具同步上下文",
+  "author": "ethanhuangcst",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethanhuangcst/skill-samectx"
+  },
+  "keywords": [
+    "context",
+    "sync",
+    "gist",
+    "trae",
+    "ai",
+    "productivity"
+  ],
+  "triggers": {
+    "keywords": [
+      "同步上下文",
+      "sync context",
+      "上下文同步",
+      "多设备同步",
+      "跨设备",
+      "切换设备",
+      "同步到其他设备",
+      "保存上下文",
+      "备份上下文",
+      "上下文备份"
+    ],
+    "tools": [
+      "TRAE CN",
+      "Cursor",
+      "Claude Code"
+    ],
+    "scenarios": [
+      "用户提到需要在其他设备继续工作",
+      "用户提到多设备协作",
+      "用户提到上下文丢失或需要恢复",
+      "用户提到项目切换",
+      "用户提到需要保存对话历史"
+    ]
+  },
+  "skills": {
+    "install": {
+      "file": "skills/install.md",
+      "description": "安装引导 - 首次使用时提示安装 samectx npm 包",
+      "priority": "high"
+    },
+    "sync": {
+      "file": "skills/sync.md",
+      "description": "同步提示 - 提示用户执行同步命令",
+      "priority": "high"
+    },
+    "config": {
+      "file": "skills/config.md",
+      "description": "配置提示 - 帮助用户配置 GitHub Token",
+      "priority": "medium"
+    },
+    "init": {
+      "file": "skills/init.md",
+      "description": "初始化提示 - 帮助用户初始化项目",
+      "priority": "low"
+    }
+  },
+  "dependencies": {
+    "npm": "samectx"
+  },
+  "relatedSkills": [],
+  "documentation": "https://github.com/ethanhuangcst/npm-samectx"
+}
