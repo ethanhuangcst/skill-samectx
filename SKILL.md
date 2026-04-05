@@ -35,7 +35,18 @@ Context management tool - 智能整理对话上下文并保存到本地目录
 samectx sync --tasks "任务1;任务2" --keypoints "关键点1;关键点2" --decisions "决策1"
 ```
 
-### 步骤 4: 自动执行
+### 步骤 4: 检查并安装 samectx
+在执行命令前，先检查 `samectx` 是否已安装:
+```bash
+which samectx
+```
+如果未安装（命令返回错误或空），自动执行安装:
+```bash
+npm install -g samectx
+```
+安装完成后继续执行步骤 5。
+
+### 步骤 5: 自动执行
 使用 RunCommand 工具自动执行生成的命令。
 
 ## 示例
